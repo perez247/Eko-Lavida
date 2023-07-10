@@ -1,9 +1,10 @@
-.customShadow {
-    font-weight: 500;
+.appShadow {
+    font-size: calc( 1em + 10vmin );
+    font-weight: 900;
     color: #00697B;
     
-    --x-offset: -0.0125em;
-    --y-offset: 0.0125em;
+    --x-offset: -0.0625em;
+    --y-offset: 0.0625em;
     --stroke: 0.025em;
     --background-color: white;
     --stroke-color: lightblue;
@@ -27,7 +28,7 @@
   I can't even find a test: 
   https://wpt.fyi/results/css/css-text-decor */
   @supports ( text-shadow: 1px 1px 1px 1px black ) {
-    .customShadow {
+    .appShadow {
       text-shadow:
         
         var(--x-offset)
