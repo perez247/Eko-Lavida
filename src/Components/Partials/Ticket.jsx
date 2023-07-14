@@ -29,7 +29,7 @@ const Ticket = () => {
         <p className='w-70 m-auto py-10 text-white text-2xl text-center'>
             <p className='mb-4'>We are Eko Lavida. <br /> We make a vibe.</p>
             {/*  */}
-            <a href="www.fatsoma.com/ekolavida" target="_blank" rel="noopener noreferrer" className='block m-auto'>
+            <a href="https://fatsoma.com/ekolavida" target="_blank" rel="noopener noreferrer" className='block m-auto'>
                 <Button disabled={hasExpired} size='lg' className='bg-tetiary' color='green'>Buy Tickets</Button>
             </a>
         </p>
