@@ -10,7 +10,8 @@ module.exports = withMT({
         tetiary: '#00697B'
       },
       fontFamily: {
-        body: ['Chivo Mono']
+        body: ['Chivo Mono'],
+        block: ['Nanum Brush Script']
       }
     },
   },

@@ -20,7 +20,7 @@ const MailingList = () => {
 
         <div className='container m-auto my-20 pt-10 bg-primary relative'>
             <div className='absolute text-center -top-24 pt-10 md:pt-0' >
-                <ShadowName name="Mailing list" />
+                <ShadowName name="Mailing list" className={`text-5xl md:text-6xl lg:text-7xl`} />
             </div>
 
             <div className='w-full text-center py-20' >

@@ -9,6 +9,7 @@ import Lavida from '../Components/Partials/Lavida';
 import { motion } from "framer-motion";
 import Artist from '../Components/Partials/Artist';
 import MailingList from '../Components/Partials/MailingList';
+import Series from '../Components/Partials/Series/Series';
 
 const Home = () => {
   return (
@@ -21,9 +22,11 @@ const Home = () => {
       transition={{ delay: 1.8, duration: 0.6 }}
     > 
       <Lavida />
-      <AppHeader />  
+      {/* <AppHeader />  
       <Address />
-      <Artist />
+      <Artist /> */}
+      <Series />
+      <AppHeader />
       <MailingList />
     </motion.div>
   </>

@@ -39,7 +39,7 @@ const NavBar = () => {
 
   return (
     <>
-      {open && <div onClick={cycleOpen} className='fixed w-screen h-screen backdrop-blur-sm z-[20]'></div>}
+      {open && <div onClick={cycleOpen} className='fixed w-screen h-screen backdrop-blur-sm z-[100]'></div>}
 
       <nav className='fixed top-0 left-0 w-screen h-20 md:w-20 md:h-screen bg-secondary z-10'>
         <div className='flex px-2 md:px-0 md:h-full md:flex-col justify-between align-middle'>

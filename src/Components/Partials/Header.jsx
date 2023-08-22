@@ -19,8 +19,12 @@ const AppHeader = () => {
   return (
     <div ref={devRef} className='h-[100vh] min-h-[40rem] my-20 relative overflow-hidden'>
 
-      <motion.div className='w-[80vw] lg:w-[25vw]  absolute top-0 right-4 bg-white'>
-        <p className='border-l-8 text-xl border-tetiary pl-8'>Come 'Eat - Play - Party - Connect' with West Midlands local African-Carribean community this summer at the very heart of Birmingham! </p>
+      <motion.div     
+      initial={{ opacity: 0, scale: 0 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ delay: 0.2, duration: 0.5 }}
+      className='w-[80vw] lg:w-[25vw] absolute top-0 right-4 bg-white'>
+        <p className='border-l-8 text-xl border-tetiary pl-8 lg:text-3xl'> <span className='font-block text-tetiary text-4xl font-bold lg:text-6xl'>FREE!!</span> cocktails for the first 30 people</p>
       </motion.div>
 
       <div className='absolute w-full h-full flex justify-center items-center -z-10'>
@@ -52,8 +56,16 @@ const AppHeader = () => {
         </motion.div>
       </div>
 
-      <motion.div className='w-[80vw] lg:w-[25vw]  absolute bottom-0 left-4 bg-white'>
-        <p className='border-r-8 text-xl border-tetiary pl-8'>Join the Chop Life Crew of funky DJs, MCs and staff, along with 500+ like-minded Afrobeats, Amapiano and Dancehall lovers as we kick off the summer with a BANG </p>
+      <motion.div
+      initial={{ opacity: 0, scale: 0 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ delay: 0.2, duration: 0.5 }}
+      className='w-[80vw] lg:w-[30vw]  absolute bottom-0 left-4 bg-white'>
+        <p className='border-r-8 text-xl border-tetiary pl-8 text-center'>
+          <span className='block font-block font-bold text-2xl py-2 lg:text-4xl text-tetiary'>GAMES</span>
+          <span className='block font-block font-bold text-2xl py-2 lg:text-4xl text-white bg-tetiary'>AFRO VARIBBEAN FOOD</span>
+          <span className='block font-block font-bold text-2xl py-2 lg:text-4xl text-secondary'>AMAZING PRIZES</span>
+        </p>
       </motion.div>
 
     </div>
